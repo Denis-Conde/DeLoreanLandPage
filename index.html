@@ -9,26 +9,28 @@
       sizes="32x32"
       href="img/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css" />
-    <title>BEST Keyboard | De - Lorean</title>
+    <title>Teclado | TM Type</title>
   </head>
   <body>
     <header>
-      <nav class="grid-main topnav">
-        <a href="">
-          <img
-            src="svg/logo.svg"
-            width="40"
-            height="40"
-            alt="Typemaster Home"
-        /></a>
-        <button class="button blue">Reserva ahora</button>
+      <nav>
+        <ul>
+          <li><a href="">
+            <img src="svg/logo.svg" width="40" height="40" alt="Logo">
+          </a></li>
+          <li><a href="#main">INICIO</a></li>
+          <li><a href="#car">CARACTERÍSTICAS</a></li>
+          <li><a href="#reserva">RESERVA</a></li>
+          <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
       </nav>
     </header>
-    <main>
-      <section class="grid-main hero">
+    <main id="main">
+      <section class="grid-main hero" id="reserva">
         <div class="hero-text">
-          <h1 class="headline">De-Lorean</h1>
+          <h1 class="headline">TM Type</h1>
           <p class="description">
             Mejore su productividad y sus juegos sin gastar una fortuna.
             Actualice a una experiencia de mecanografía de alta calidad.
@@ -96,13 +98,13 @@
         <div class="details-text">
           <h2 class="headline">Teclado mecánico inalámbrico</h2>
           <p class="description small">
-            El teclado De-Lorean cuenta con una construcción de primera categoria.
+            El teclado TM Type cuenta con una construcción de primera categoria.
             Ofrece una amplia variedad de teclas.
             Conectividad inalámbrica confiable.
           </p>
         </div>
       </section>
-      <section class="grid-main features">
+      <section class="grid-main features" id="car">
         <div class="feature">
           <div class="icon">
             <img
@@ -166,28 +168,40 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="social">
-        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      </div>
-      <ul class="list">
-        <li>
-          <a href="#">INICIO</a>
-        </li>
-        <li>
-          <a href="#">SERVICIOS</a>
-        </li>
-        <li>
-          <a href="#">SOBRE NOSOTROS</a>
-        </li>
-        <li>
-          <a href="#">TERMINOS Y CONDICIONES</a>
-        </li>
-          <p class="copyright">De-Lorean</p>
-        </ul>
-    </footer>
+    <section class="contact" id=contacto>
+      <div class="container">
+        <h2>Contactanos</h2>
+        <div class="contact-wrapper">
+          <div class="contact-form">
+            <h3>Envíanos un mensaje</h3>
+            <form>
+              <div class="form-group">
+                <input type="text" name="name" placeholder="Nombre">
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" placeholder="Correo electrónico">
+              </div>
+              <div class="form-group">
+                <textarea name="message" placeholder="Mensaje..."></textarea>
+              </div>
+              <button type="submit">Enviar mensaje</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h3>Información de Contacto</h3>
+            <p><i class="fas fa-phone"></i>+1 23 456 789</p>
+            <p><i class="fas fa-envelope"></i>leepep@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i>123, Ohioo</p>
+            <hr>
+            <div class="social">
+              <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
   </body>
 </html>
